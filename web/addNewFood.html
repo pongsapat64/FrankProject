@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>add new food</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>เพิ่มรถ</h2>
+        <form action="AddNewFoodServlet">
+            ชื่อ: <input type="text" name="carName"><br/>
+            ประเภท: <select name="carType" id="carType">
+                <option value="ซีดาน">ซีดาน</option>
+                <option value="แฮตช์แบ็ก">แฮตช์แบ็ก</option>
+                <option value="สเตชั่นแวกอน">สเตชั่นแวกอน</option>
+                <option value="คูเป้">คูเป้</option>
+                <option value="ครอสโอเวอร์">ครอสโอเวอร์</option>
+            </select><br/>
+            ของแต่งรถ:<br/>
+            <input type="checkbox" id="accessories" name="accessories" value="ล้อแม็ก">ล้อแม็ก<br/>
+            <input type="checkbox" id="accessories" name="accessories" value="ยาง">ยาง<br/>
+            <input type="checkbox" id="accessories" name="accessories" value="โช้คอัพ">โช้คอัพ<br/>
+            <input type="checkbox" id="accessories" name="accessories" value="เบรก">เบรก<br/>           
+            สีรถ:<br/>
+            <input type="radio" id="color1" name="color" value="ไม่เผ็ด">
+            <label for="color1">แดง</label><br>
+            <input type="radio" id="color2" name="color" value="เผ็ดน้อย">
+            <label for="color2">ดำ</label><br>
+            <input type="radio" id="color3" name="color" value="เผ็ดมาก">
+            <label for="color3">ขาว</label><br>
+            ราคา:
+            <input type="text" name="carPrice"><br/>
+            <input type="submit" value="เพิ่มรถ">
+        </form>
+    </body>
+</html>
